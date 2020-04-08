@@ -1,0 +1,133 @@
+.home{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .left{
+    width: 50%;
+    height: 1000px;
+    background: url('../../image/bg.jpg');
+    background-size: cover;
+    background-position: 70% 50%;
+  }
+  .right{
+    background: #000;
+    width: 50%;
+    height: 1000px;
+    // padding: 0 45px;
+    .title{
+      margin-top: 30%;
+      position: relative;
+      padding-bottom: 22px;
+      width: 65%;
+      text-align: left;
+      padding-left: 100px;
+      z-index: 999;
+      .section-btn{
+        background-color: transparent;
+        border: 3px solid #ea9d33;
+        border-radius: 100px;
+        color: #232B2B;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 1.6px;
+        padding: 12px 36px;
+        margin-top: 42px;
+        transition: all 0.4s ease-in-out;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover {
+          background: #000;
+          border-color: transparent;
+          color: #ffffff;
+        }
+      }
+      .btn-success{
+        &:focus {
+          background-color: #000;
+          border-color: transparent;
+        }
+      }
+      p{
+        color: #ccc;
+        font-size: 13px;
+        font-weight: normal;
+        letter-spacing: 2px;
+        padding-top: 6px;
+      }
+      h1{
+        color: #eb9e33;
+        margin-bottom: 18px;
+      }
+      h4{
+        color: #eb9e33;
+        margin-bottom: 18px;
+      }
+      strong {
+        color: #eee;
+        font-weight: normal;
+      }
+      .btn{
+        display: inline-block;
+        margin-bottom: 0;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+      }
+    }
+  }
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  .infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  .hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.clearfix{
+  *zoom: 1;/*ie6清除浮动的方式 *号只有IE6-IE7执行，其他浏览器不执行*/
+  &:after{/*伪元素是行内元素 正常浏览器清除浮动方法*/
+    content: "";
+    display: block;
+    height: 0;
+    clear:both;
+    visibility: hidden;
+  }
+}
