@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/yangdezhicy/react_web/issues"
   },
-  "homepage": "https://github.com/yangdezhicy/react_web#readme",
+  "homepage": "https://github.com/yangdezhicy/react_web",
   "devDependencies": {
     "@babel/core": "^7.18.9",
     "@babel/preset-env": "^7.18.9",
