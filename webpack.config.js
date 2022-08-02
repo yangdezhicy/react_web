@@ -2,9 +2,10 @@ const path = require('path');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: './src/index.js',
+	mode: 'development',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'docs')
   },
   module: {
     rules: [
@@ -34,7 +35,7 @@ module.exports = {
 		open: true,
 		hot: true,
 		port: 8080,
-		static: './dist',
+		static: './docs',
 		historyApiFallback: true
 	}
 };
