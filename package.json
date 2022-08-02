@@ -10,7 +10,7 @@
     "predeploy": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint": "lint-staged",
-    "commitlint": "commitlint -E HUSKY_GIT_PARAMS"
+    "commitlint": "npx commitlint --edit"
   },
   "repository": {
     "type": "git",
