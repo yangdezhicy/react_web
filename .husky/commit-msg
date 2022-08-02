@@ -2,4 +2,6 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 # commitlint -e $HUSKY_GIT_PARAMS
-# npm run commitlint
+# commitlint .commitlint.config.js -E HUSKY_GIT_PARAMS
+# npx --no -- commitlint edit 
+npx commitlint --edit
