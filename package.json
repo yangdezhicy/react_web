@@ -8,7 +8,7 @@
     "build": "npx webpack",
     "start": "webpack-dev-server --open --mode development",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d docs"
   },
   "repository": {
     "type": "git",
