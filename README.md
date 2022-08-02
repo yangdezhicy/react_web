@@ -1,2 +1,7 @@
-这是我的第一次提交
-这是我的第er次提交
+## 启动
+npm run start
+
+Open http://localhost:3000 to view it in the browser.
+
+## 构建
+npm run build
