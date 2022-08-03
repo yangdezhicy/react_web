@@ -1,36 +1,37 @@
-const path = require('path');
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const path = require('path')
+const HtmlWebPackPlugin = require('html-webpack-plugin')
+
 module.exports = {
-  entry: './src/index.js',
+	entry: './src/index.js',
 	mode: 'development',
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'docs')
-  },
-  module: {
-    rules: [
-      {
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader'
-        }
-      },
-      {
-        test: /\.html$/,
-        use: {
-          loader: 'html-loader'
-        }
-      }
-    ]
-  },
-  plugins: [
-    new HtmlWebPackPlugin({
-      titel: 'react app',
-      filename: 'index.html',
-      template: path.resolve(__dirname, 'index.html'),
-    })
-  ],
+	output: {
+		filename: 'bundle.js',
+		path: path.resolve(__dirname, 'docs')
+	},
+	module: {
+		rules: [
+			{
+				test: /\.jsx?$/,
+				exclude: /node_modules/,
+				use: {
+					loader: 'babel-loader'
+				}
+			},
+			{
+				test: /\.html$/,
+				use: {
+					loader: 'html-loader'
+				}
+			}
+		]
+	},
+	plugins: [
+		new HtmlWebPackPlugin({
+			titel: 'react app',
+			filename: 'index.html',
+			template: path.resolve(__dirname, 'index.html')
+		})
+	],
 	devServer: {
 		open: true,
 		hot: true,
@@ -38,4 +39,4 @@ module.exports = {
 		static: './docs',
 		historyApiFallback: true
 	}
-};
+}
