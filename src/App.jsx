@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { Component } from 'react';
+import { Provider } from "react-redux";
+import { ConfigProvider } from "antd";
+import zhCN from "antd/es/locale/zh_CN";
+import store from "./store";
+import Router from "./router";
 
-class App extends React.Component {
-	render () {
-		return (
-			<div>
-				<h1>nihao</h1>
-			</div>
-		)
-	}
+class App extends Component {
+  render() { 
+    return (
+      <ConfigProvider locale={zhCN}>
+        <Provider store={store}>
+          <Router />
+        </Provider>
+      </ConfigProvider>
+    );
+  }
 }
-
+ 
 export default App

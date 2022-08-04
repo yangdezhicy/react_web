@@ -1,0 +1,1 @@
+(this.webpackJsonpreact_web=this.webpackJsonpreact_web||[]).push([[24],{1351:function(e,t,n){"use strict";n.r(t);var a=n(0),c=n.n(a);t.default=function(){return c.a.createElement("h1",null,"Menu1-2-1")}}}]);

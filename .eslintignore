@@ -1,4 +1,0 @@
-.eslintrc*
-build/**/*
-node_modules/**/*
-docs/**/*
