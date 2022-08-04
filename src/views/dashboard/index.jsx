@@ -38,7 +38,7 @@ const Dashboard = () => {
   return (
     <div className="app-container">
       <a
-        href="https://github.com/NLRX-WJC/react-web"
+        href="https://github.com/NLRX-WJC/react_web"
         target="_blank"
         rel="noopener noreferrer"
         className="github-corner"
