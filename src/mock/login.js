@@ -1,3 +1,5 @@
+import wechat from "@/assets/images/avatar.jpg";
+
 const tokens = {
   admin: "admin-token",
   guest: "guest-token",
@@ -8,8 +10,8 @@ const users = {
   "admin-token": {
     id: "admin",
     role: "admin",
-    name: "难凉热血",
-    avatar: "https://s1.ax1x.com/2020/04/28/J5hUaT.jpg",
+    name: "Rainycy",
+    avatar: wechat,
     description: "拥有系统内所有菜单和路由权限",
   },
   "editor-token": {

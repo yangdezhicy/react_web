@@ -20,6 +20,7 @@ const LayoutHeader = (props) => {
     showSettings,
     fixedHeader,
   } = props;
+  console.log("props",props);
   token && getUserInfo(token);
   const handleLogout = (token) => {
     Modal.confirm({
@@ -49,7 +50,7 @@ const LayoutHeader = (props) => {
       <Menu.Item key="project">
         <a
           target="_blank"
-          href="https://github.com/NLRX-WJC/react-antd-admin-template"
+          href="https://github.com/yangdezhicy/react_web"
           rel="noopener noreferrer"
         >
           项目地址

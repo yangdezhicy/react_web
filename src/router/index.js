@@ -7,6 +7,7 @@ import Login from "@/views/login";
 class Router extends React.Component {
   render() {
     const { token, role, getUserInfo } = this.props;
+    console.log("abacus/GetCalPackageDetailPrice",token);
     return (
       <HashRouter>
         <Switch>

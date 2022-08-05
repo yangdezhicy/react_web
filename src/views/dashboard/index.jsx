@@ -41,8 +41,7 @@ const Dashboard = () => {
         href="https://github.com/NLRX-WJC/react_web"
         target="_blank"
         rel="noopener noreferrer"
-        className="github-corner"
-      ></a>
+        className="github-corner">111</a>
 
       <PanelGroup handleSetLineChartData={handleSetLineChartData} />
 

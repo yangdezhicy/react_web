@@ -101,6 +101,32 @@ const Login = (props) => {
                 />
               )}
             </Form.Item>
+            {/* <Form.Item>
+            {getFieldDecorator("verifyCode", {
+                rules: [
+                  {
+                    required: true,
+                    whitespace: true,
+                    message: "请输入验证码",
+                  },
+                ],
+                initialValue: "sych", // 初始值
+              })(
+                <Row>
+                  <Col span={12}>
+                    <Input
+                      prefix={
+                        <Icon type="qrcode" style={{ color: "rgba(0,0,0,.25)" }} />
+                      }
+                      type="text"
+                      placeholder="验证码"
+                    />
+                  </Col>
+                  <Col span={4}></Col>
+                  <Col span={8}>col-12</Col>
+                </Row>
+              )}
+            </Form.Item> */}
             <Form.Item>
               <Button
                 type="primary"
@@ -109,13 +135,6 @@ const Login = (props) => {
               >
                 登录
               </Button>
-            </Form.Item>
-            <Form.Item>
-              <span>账号 : admin 密码 : 随便填</span>
-              <br />
-              <span>账号 : editor 密码 : 随便填</span>
-              <br />
-              <span>账号 : guest 密码 : 随便填</span>
             </Form.Item>
           </Spin>
         </Form>
